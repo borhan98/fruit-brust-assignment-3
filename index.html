@@ -19,6 +19,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color': '#F85559',
+                'main-text': '#121212',
+                'descrip-text': '#6D6D6D',
               }
             }
           }
@@ -32,6 +35,72 @@
     </style>
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header>
+      <nav class="container mx-auto">
+        <div class="navbar flex bg-primary-color py-2 md:py-4 lg:py-8 px-4 lg:px-12 rounded-full">
+          <div class="order-2 flex-1 flex md:order-2 lg:order-1 navbar-end">
+            <div class="navbar-start flex-1 hidden lg:flex">
+               <ul class="flex lg:gap-4 xl:gap-7">
+                <li><a class="lato text-sm md:text-base lg:text-xl text-white font-medium">Home</a></li>
+                <li><a class="lato text-sm md:text-base lg:text-xl text-white font-medium">About Us</a></li> 
+                <li><a class="lato text-sm md:text-base lg:text-xl text-white font-medium">Shop</a></li> 
+                <li><a class="lato text-sm md:text-base lg:text-xl text-white font-medium">All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="dropdown relative">
+              <label tabindex="0" class="text-3xl lg:hidden">
+                <ion-icon name="menu-outline"></ion-icon>
+              </label>
+              <ul tabindex="0" class="abosolute right-0 top-10 dropdown-content mt-3 z-[1] p-3 space-y-2 shadow bg-primary-color rounded">
+                <li><a class="text-white lato text-sm md:text-base lg:text-xl text-descrip-text lg:text-white font-medium">Home</a></li>
+                <li><a class="text-white lato text-sm md:text-base lg:text-xl text-descrip-text lg:text-white font-medium">About Us</a></li> 
+                <li><a class="text-white lato text-sm md:text-base lg:text-xl text-descrip-text lg:text-white font-medium">Shop</a></li>
+                <li><a class="text-white lato text-sm md:text-base lg:text-xl text-descrip-text lg:text-white font-medium">All Fruits</a></li>
+                <li>
+                  <div class="w-full bg-white rounded flex items-center">
+                    <input class="p-2 rounded focus:outline-none lato text-sm md:text-base text-[#9A9A9A] bg-white" type="search" name="search" placeholder="Search here">
+                    <span class="text-2xl pr-3"><ion-icon name="search-outline"></ion-icon></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="order-1 flex-1 md:order-1 lg:order-2">
+            <img class="w-8 lg:w-14" src="./assets/images/logo.png" alt="logo">
+            <span class="lato text-xl md:text-2xl lg:text-4xl xl:text-5xl text-white ml-2">Fruit Burst</span>
+          </a>
+          <div class="order-3 flex-1 navbar-end hidden lg:block max-w-fit ml-auto">
+            <div class="w-full bg-white rounded-full flex items-center">
+              <input class="py-5 px-7 rounded-full focus:outline-none lato text-sm md:text-base text-[#9A9A9A] bg-white" type="search" name="search" id="" placeholder="Search here">
+              <span class="text-2xl pr-3"><ion-icon name="search-outline"></ion-icon></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner section -->
+      
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
